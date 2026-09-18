@@ -1,8 +1,8 @@
 # Streamy Video Streaming Backend Platform 
  
 ## Software Technology Course Laboratory Node 
-*   **Student Identity:** [Enter Your Name Here] 
-*   **Neptun System Code:** [Enter Your Neptun Code Here] 
+*   **Student Identity:** [libinghong] 
+*   **Neptun System Code:** [L3UC28] 
 *   **Course Section Reference:** GEIAL314-B2a 
  --- 
  
