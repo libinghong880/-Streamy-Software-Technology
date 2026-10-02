@@ -23,12 +23,7 @@ flowchart TD
     LocalIDE -->|3. git add CLI Operations| GitStage
     GitStage -->|4. git push Pipeline Push| RemoteHub
 
-    ## Streamy Application Engineering Development Lifecycle
-To guarantee systematic software tracking across the implementation lifespan of
-**Streamy**, our individual developer pipeline follows the structured iterative gate
-review framework illustrated below.
-
-```mermaid
+---
 title: Streamy Iterative SDLC Blueprint
 ---
 flowchart TD
@@ -43,14 +38,13 @@ flowchart TD
 
     subgraph ValidationGate [3. Verification Gatekeeper Loop]
         D --> E(Does Architecture Match Code Specs?)
-        E -- No: Refactor Blueprint --> B
+        E -->|No: Refactor Blueprint| B
     end
 
     subgraph ProductionPhase [4. Python Construction Layer]
-        E -- Yes: Pass Gate --> F[Compile Python Class Skeletons]
+        E -->|Yes: Pass Gate| F[Compile Python Class Skeletons]
         F --> G[Implement Internal Class Logic]
     end
 
     E:::decisionStyle
     classDef decisionStyle fill:#f9f,stroke:#333,stroke-width:2px;
-```
