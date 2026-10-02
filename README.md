@@ -1,15 +1,15 @@
-# Streamy Video Streaming Backend Platform 
- 
-## Software Technology Course Laboratory Node 
-*   **Student Identity:** [libinghong] 
-*   **Neptun System Code:** [L3UC28] 
-*   **Course Section Reference:** GEIAL314-B2a 
- --- 
- 
-## Workspace Environment Architecture 
-The diagram below maps out how our development environment connects local code 
-authoring to remote version tracking, using a **Diagrams-as-Code** design pipeline. 
- 
+# Streamy Video Streaming Backend Platform
+
+## Software Technology Course Laboratory Node
+* **Student Identity:** [Libinghong]
+* **Neptun System Code:** [L3UC28]
+* **Course Section Reference:** GEIAL314-B2a
+
+---
+
+## Workspace Environment Architecture
+The diagram below maps out how our development environment connects local code authoring to remote version tracking, using a **Diagrams-as-Code** design pipeline.
+
 ```mermaid
 flowchart TD
     UserNode["Workstation Client <br> (Terminal CLI / Web Browser)"]
