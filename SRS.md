@@ -23,19 +23,20 @@ The diagram below plots the structural use-case interactions crossing the Stream
 title: Streamy System Boundary & Functional Use Cases
 ---
 flowchart LR
- ViewerActor(("👤 External Actor:<br>Platform Viewer"))
- subgraph ExternalApp [Client Application Interface]
- UI[Web Dashboard UI]
- end
- subgraph SystemPerimeter [Streamy Core System Perimeter]
- FR1[FR-1: Browse Catalog by Genre]
- FR2[FR-2: Initialize Media Streaming]
- FR3[FR-3: Log User Review Metrics]
- end
- ViewerActor --> UI
- UI -- Ingests Genre Metadata --> FR1
- UI -- Triggers Playback Route --> FR2
- UI -- Submits Rating Payload --> FR3
+    ViewerActor(("👤 External Actor:<br>Platform Viewer"))
+    subgraph ExternalApp [Client Application Interface]
+        UI[Web Dashboard UI]
+    end
+    subgraph SystemPerimeter [Streamy Core System Perimeter]
+        FR1[FR-1: Browse Catalog by Genre]
+        FR2[FR-2: Initialize Media Streaming]
+        FR3[FR-3: Log User Review Metrics]
+    end
+    ViewerActor --> UI
+    UI -- Ingests Genre Metadata --> FR1
+    UI -- Triggers Playback Route --> FR2
+    UI -- Submits Rating Payload --> FR3
+```
 
 ## 4. C4 Architecture Model (System Context)
 
