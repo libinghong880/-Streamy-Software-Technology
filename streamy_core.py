@@ -3,6 +3,7 @@
 # Miskolc University - Software Technology Laboratory Framework Blueprint
 # ==============================================================================
 
+# 进行看板issue推送修改
 class Title:
     """Represents the abstract parent media element inside the domain."""
     def __init__(self, name: str, release_year: int):
