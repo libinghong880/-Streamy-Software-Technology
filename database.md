@@ -50,3 +50,4 @@ erDiagram
  TITLES ||--o{ REVIEWS : collects
  TITLES ||--o{ TITLE_GENRES : categorizes
  GENRES ||--o{ TITLE_GENRES : classifies
+ ```
