@@ -443,3 +443,14 @@ The Streamy development environment follows a **Diagrams-as-Code** workflow in w
 7. GitHub provides remote repository synchronization.
 8. Verification feedback can return the development process to requirements or architectural design.
 9. The iterative lifecycle supports continuous refinement of the Streamy backend platform.
+
+
+## System Architecture (C4 Context)
+
+```mermaid
+flowchart LR
+    User([Viewer / User]) -->|Streams Video & Browses| Streamy[Streamy Video Streaming Platform]
+    Admin([Content Admin]) -->|Uploads & Manages Media| Streamy
+    Streamy -->|Fetches Metadata & Auth| ExtAuth[External Identity Provider]
+    Streamy -->|Streams Video Chunks| CDN[Cloud CDN Storage]
+```
